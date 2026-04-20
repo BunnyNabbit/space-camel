@@ -31,7 +31,7 @@
       }
     }
   },
-  "icon": "./spaceCamel.webp",
+  "icon": "./media/spaceCamel.webp",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
