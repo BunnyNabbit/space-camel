@@ -1,4 +1,4 @@
-# space Camel
+# _space Camel_
 
 Adds virtual spaces to camelCase / PascalCase, making them appear as camel Case / Pascal Case.
 
