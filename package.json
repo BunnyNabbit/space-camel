@@ -1,0 +1,52 @@
+{
+  "name": "space-camel",
+  "displayName": "space Camel",
+  "publisher": "BunnyNabbit",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration":{
+      "title": "space Camel",
+      "properties": {
+        "spaceCamel.separator": {
+          "type": "string",
+          "default": " ",
+          "description": "The string to use for separating words."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22",
+    "@types/vscode": "^1.104.0",
+    "@types/vscode-webview": "^1.57.5",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.36.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-drone-class": "^0.1.0",
+    "typescript": "^5.9.3"
+  }
+}
