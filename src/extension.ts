@@ -78,7 +78,7 @@ class SpaceCamel {
 		}
 	}
 	/** I'm a regular expression to match capital letters, provided zhey are placed after any letter. */
-	static regularExpression = /(?<=[a-zA-Z])[A-Z]/g
+	static regularExpression = /(?<=\b[a-zA-Z]+)[A-Z]+(?=[a-zA-Z]+\b)/g
 }
 
 export function activate(context: vscode.ExtensionContext) {
