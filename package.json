@@ -3,7 +3,7 @@
   "displayName": "space Camel",
   "publisher": "BunnyNabbit",
   "description": "Adds virtual spaces to camelCase/PascalCase.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.104.0"
   },
