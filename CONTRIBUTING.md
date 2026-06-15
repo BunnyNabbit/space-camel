@@ -8,6 +8,6 @@ For AI agents, read `AGENTS.md`.
 
 ## Quick development setup
 
-- Ensure *pnpm* is installed by using `corepack enable pnpm`.
+- Ensure _pnpm_ is installed by using `corepack enable pnpm`.
 - Install dependencies with `pnpm install`.
 - To test, open the command palette (CTRL + P) and use `Debug: Start debugging`.
