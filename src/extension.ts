@@ -37,7 +37,7 @@ class SpaceCamel {
 			context.subscriptions
 		)
 	}
-
+	/** @todo Yet to be documented. */
 	updateTextEditorDecorationType(separator: string) {
 		if (this.spaceDecorationType) {
 			this.spaceDecorationType.dispose()
@@ -50,7 +50,7 @@ class SpaceCamel {
 		this.spaceDecorationType = decorationType
 		return decorationType
 	}
-
+	/** @todo Yet to be documented. */
 	updateDecorations() {
 		if (!this.activeEditor) return
 		const text = this.activeEditor.document.getText()
@@ -64,7 +64,7 @@ class SpaceCamel {
 		}
 		this.activeEditor.setDecorations(this.spaceDecorationType, spaces)
 	}
-
+	/** @todo Yet to be documented. */
 	triggerUpdateDecorations(throttle = false) {
 		if (this.timeout) {
 			clearTimeout(this.timeout)
