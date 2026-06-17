@@ -1,5 +1,5 @@
 import * as vscode from "vscode"
-import { regularExpression } from "./regex"
+import presets from "./presets"
 
 class SpaceCamel {
 	context: vscode.ExtensionContext
@@ -80,7 +80,7 @@ class SpaceCamel {
 		}
 	}
 	/** I'm a regular expression to match capital letters, provided zhey are placed after any letter. */
-	static regularExpression = regularExpression
+	static regularExpression = presets.default.regularExpression
 }
 
 export function activate(context: vscode.ExtensionContext) {
