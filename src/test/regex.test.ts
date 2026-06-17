@@ -1,8 +1,8 @@
 import * as assert from "node:assert/strict"
-import { regularExpression } from "../regex"
+import { presets } from "../presets"
 
 const replacer = (match: string) => `~${match}` // `~` for inspection
-const decorate = (str: string) => str.replace(regularExpression, replacer)
+const decorate = (str: string) => str.replace(presets.default.regularExpression, replacer)
 
 suite("regex for matching", () => {
 	test("supports normal input: camelCase & PascalCase", () => {
