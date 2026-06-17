@@ -1,5 +1,5 @@
 import * as vscode from "vscode"
-import { presets } from "./presets"
+import presets from "./presets"
 
 class SpaceCamel {
 	context: vscode.ExtensionContext

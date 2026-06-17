@@ -1,5 +1,5 @@
 import * as assert from "node:assert/strict"
-import { presets } from "../presets"
+import presets from "../Preset"
 
 const replacer = (match: string) => `~${match}` // `~` for inspection
 const decorate = (str: string) => str.replace(presets.default.regularExpression, replacer)
