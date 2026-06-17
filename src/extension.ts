@@ -7,7 +7,7 @@ class SpaceCamel {
 	/** I am managed by {@link triggerUpdateDecorations} to debounce updates when the user is typing in the editor. */
 	refreshDelayTimeout: any
 	activeEditor: vscode.TextEditor | undefined
-	/**/
+	/** @todo Yet to be documented. */
 	constructor(context: vscode.ExtensionContext) {
 		this.context = context
 		this.spaceDecorationType = this.updateTextEditorDecorationType(vscode.workspace.getConfiguration("spaceCamel").get("separator") ?? " ")
